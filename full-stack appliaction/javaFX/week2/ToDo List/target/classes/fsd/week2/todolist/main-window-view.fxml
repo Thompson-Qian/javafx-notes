@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<BorderPane fx:controller="fsd.week2.todolist.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <left>
+        <ListView fx:id="toDoListView" onMouseClicked="#handleClickListView"/>
+    </left>
+    <!--在左区域创造一个list view -->
+    <center>
+        <TextArea fx:id="itemDetailsTextArea"/>
+    </center>
+    <!--textArea 能让用户在一个区域打字-->
+
+</BorderPane>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:controller="com.example.borderpanelayout.Controller"
+            xmlns:fx = "http://javafx.com/fxml">
+
+    <top>
+        <Label text="This is the top of the border layout" alignment = "CENTER"
+               BorderPane.alignment="CENTER"
+               style = "-fx-border-color:blue;-fx-border-width:4;-fx-border-style:dashed"/>
+    </top>
+
+
+    <left>
+        <Label text = "This label is on the left" alignment = "CENTER"/>
+    </left>
+
+
+    <center>
+        <Label text = "This label is in the center" alignment ="CENTER"/>
+
+    </center>
+    <right>
+        <Label text ="This label is on the right" alignment="CENTER"/>
+
+    </right>
+    <bottom>
+        <VBox spacing = "20" alignment="CENTER">
+            <Button text="Okay" prefWidth="90"/>
+            <Button text="Cancel" prefWidth="90"/>
+            <Button text ="Help" prefWidth="90"/>
+        </VBox>
+
+    </bottom>
+
+</BorderPane>
