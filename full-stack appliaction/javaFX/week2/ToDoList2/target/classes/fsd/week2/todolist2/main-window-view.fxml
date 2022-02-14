@@ -11,7 +11,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <BorderPane fx:controller="fsd.week2.todolist2.Controller"
-            xmlns:fx="http://javafx.com/fxml" >
+            xmlns:fx="http://javafx.com/fxml">
     <top>
         <MenuBar>
             <Menu text="File">
@@ -21,14 +21,15 @@
                     <MenuItem text="Exit..."/>
                 </items>
             </Menu>
-            <Menu text ="Edit">
+            <Menu text = "Edit">
                 <items>
                     <MenuItem text="Undo"/>
+                    <MenuItem text="Cut"/>
+                    <MenuItem text="Paste"/>
                 </items>
             </Menu>
         </MenuBar>
     </top>
-
     <left>
         <ListView fx:id="toDoListView"/>
     </left>
@@ -41,11 +42,11 @@
                     <font>
                         <Font name="Times New Roman bold" size="20"/>
                     </font>
-                    <!--font代表字体 -->
+                    <!-- font决定了due的字体大小 -->
                 </Label>
                 <Label fx:id="deadlineLabel">
                     <font>
-                        <Font name="Times New Roman bold" size="30"/>
+                        <Font name="Times New Roman bold" size="20"/>
                     </font>
                 </Label>
             </HBox>

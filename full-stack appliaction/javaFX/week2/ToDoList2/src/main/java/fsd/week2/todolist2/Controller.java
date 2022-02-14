@@ -38,8 +38,8 @@ public class Controller {
                 //changed方法就是当点击新按钮的时候所做的改变方法
 
                 if(newValue != null){//如果新点击的不为空
-                    ToDoItem item = toDoListView.getSelectionModel().getSelectedItem();
-                    itemDetailsTextArea.setText(item.getDetails());
+                    ToDoItem item = toDoListView.getSelectionModel().getSelectedItem();//得到点击的内容
+                    itemDetailsTextArea.setText(item.getDetails());//显示上去
                     DateTimeFormatter df = DateTimeFormatter.ofPattern("MMMM/d/yyyy");
                     //DateTimeFormatter时间格式转换类,固定写法
                     deadlineLabel.setText(df.format(item.getDeadline()));

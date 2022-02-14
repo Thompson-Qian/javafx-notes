@@ -24,6 +24,7 @@ public class ToDoData {
     public static ToDoData getInstance(){
         return instance;
     }
+
     private ToDoData(){//私有构造方法
         //formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
