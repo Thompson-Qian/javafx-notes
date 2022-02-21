@@ -19,9 +19,10 @@ import java.util.List;
 
 public class Controller {
 
-    static String filename = "StoreMessages.txt";//private让别的类无法调用它。
+    static String filename = "StoreMessages.txt";
 
     //List<DataModel> captureDetails = new ArrayList<DataModel>();//有个arraylist叫captureDetials里面存的DataModel
+
     ArrayList<DataModel> captureDetails = new ArrayList<DataModel>();
     @FXML
     private TextField nameTextField;
@@ -44,7 +45,7 @@ public class Controller {
 
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                option = choice.getSelectionModel().getSelectedItem();
+                option = choice.getSelectionModel().getSelectedItem();//option得到点击的字符串
             }//extends <string>,<>里面的内容需要和choicebox<>里面值的类型一致
         });
     }

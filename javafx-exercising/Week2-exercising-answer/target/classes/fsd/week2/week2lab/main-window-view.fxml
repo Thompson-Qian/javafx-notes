@@ -41,10 +41,14 @@
 
     <bottom>
         <GridPane BorderPane.alignment="TOP_LEFT" >
+
             <Label text="Comments:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
             <TextArea fx:id="commentsTextArea" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+
             <Button text="Submit" GridPane.rowIndex="1" GridPane.columnIndex="1"
             onAction="#storeData"/>
+
         </GridPane>
     </bottom>
 </BorderPane>

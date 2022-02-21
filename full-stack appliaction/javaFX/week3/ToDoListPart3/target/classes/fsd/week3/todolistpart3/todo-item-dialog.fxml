@@ -12,7 +12,7 @@
         Please enter a new item to add to the todo list
     </headerText>
     <content>
-        <GridPane vgap ="10" hgap="10">
+        <GridPane vgap="10" hgap="10">
             <Label text="Short Description" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
             <TextField fx:id="shortDescrip" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
             <Label text="Details" GridPane.rowIndex="1" GridPane.columnIndex="0"/>

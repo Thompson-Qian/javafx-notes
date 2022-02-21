@@ -23,18 +23,20 @@ public class Main extends Application {
     }
 
     @Override
-    public void stop() throws IOException{
+    public void stop() throws IOException{//结束，点❎号才会执行
         try{
-            ToDoData.getInstance().storeToDoItems();
+            //ToDoData.getInstance().storeToDoItems();
+            ToDoData.getInstance().storeToDoItems();//数据存储完毕，存到硬盘
         }catch (IOException e){
             System.out.println(e.getMessage());
         }
     }
 
     @Override
-    public void init() throws IOException{
+    public void init() throws IOException{//上来做的第一件事，准备工作
         try{ //load the data in
-            ToDoData.getInstance().loadToDoItems();
+            //ToDoData.getInstance().loadToDoItems();
+            ToDoData.getInstance().loadToDoItems();//电脑获取硬盘并且加载文件。
         }catch (IOException e){
             System.out.println(e.getMessage());
         }
