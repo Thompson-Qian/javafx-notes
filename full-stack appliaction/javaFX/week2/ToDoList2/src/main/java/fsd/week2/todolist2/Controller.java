@@ -54,8 +54,8 @@ public class Controller {
         toDoListView.getSelectionModel().selectFirst();//刚打开默认选择第一行
     }
 
-    @FXML
-    public void handleClickListView() {
+     @FXML
+     public void handleClickListView() {
         ToDoItem item = toDoListView.getSelectionModel().getSelectedItem();
         itemDetailsTextArea.setText(item.getDetails());
         deadlineLabel.setText(item.getDeadline().toString());

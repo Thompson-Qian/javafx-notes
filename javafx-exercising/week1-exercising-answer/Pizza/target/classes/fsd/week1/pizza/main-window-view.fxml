@@ -23,7 +23,6 @@
     <fx:define>
         <ToggleGroup fx:id="choiceToggleGroup"/>
     </fx:define>
-    <!--单选框才需要定义一段 ToggleGroup -->
     <VBox GridPane.rowIndex="2" GridPane.columnIndex="0">
         <RadioButton fx:id="thickCrust" text="Thick crust" toggleGroup="$choiceToggleGroup"
                      onAction="#radioSelect"/>

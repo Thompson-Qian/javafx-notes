@@ -18,6 +18,7 @@
     <Label fx:id="nameLabel" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
     <Button text="Submit" GridPane.rowIndex="3" GridPane.columnIndex="0"
             onAction="#onButtonAction"/>
+    <!--onAction 就是点击鼠标之后的操作 -->
     <Button text="Cancel" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
 </GridPane>
